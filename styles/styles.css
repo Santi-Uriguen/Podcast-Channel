@@ -5,7 +5,6 @@
 h1 {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 36px;
-  color: #060a24;
   letter-spacing: 0;
   line-height: 42px;
   font-weight: 400; }
@@ -75,7 +74,7 @@ header {
         header nav .check label span {
           width: 18px;
           height: 2px;
-          background-color: black; }
+          background-color: #000000; }
         header nav .check label i {
           visibility: collapse;
           display: flex;
@@ -112,7 +111,64 @@ header {
   header #check:checked ~ .menu {
     visibility: visible; }
 
-main .btn-uno, main .btn-dos {
-  background-color: #00f3bb; }
+/*-------------------------MAIN---------------------*/
+main .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px 16px 40px 16px; }
+  main .intro h1 {
+    text-align: left;
+    margin-bottom: 16px;
+    color: #060a24; }
+    main .intro h1 .world {
+      text-decoration: line-through; }
+    main .intro h1 .pale {
+      display: block; }
+    main .intro h1 .dot {
+      color: #0000ec; }
+  main .intro p {
+    text-align: justify;
+    margin-bottom: 36px; }
+  main .intro .btn-uno, main .intro .btn-dos {
+    background-color: #00f3bb;
+    width: 100%;
+    height: 48px;
+    padding: 0;
+    margin: 0;
+    border: 0; }
+main .episodios {
+  background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+  padding: 55px 11px 120px 11px;
+  transform: skewY(-6deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  main .episodios div {
+    transform: skewY(6deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main .episodios div h1 {
+      align-self: flex-start;
+      margin: 0px 0px 16px 5px;
+      color: #ffffff; }
+    main .episodios div iframe {
+      margin: 5.5px 5px 5.5px 5px; }
+main .entrevistas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 16px 0px 16px; }
+  main .entrevistas img {
+    width: 360px;
+    height: 519px;
+    margin-top: -84px;
+    z-index: 1; }
+  main .entrevistas h1 {
+    align-self: flex-start;
+    margin: 27px 0px 8px 0px; }
+  main .entrevistas p {
+    margin: 0px 0px 12px 0px; }
 
 /*# sourceMappingURL=styles.css.map */
