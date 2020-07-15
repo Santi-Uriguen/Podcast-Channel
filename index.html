@@ -17,16 +17,14 @@
             <div class="check">
                 <img src="images/logo.svg" alt="logo">
                 <label for="check">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <i class="fas fa-bars" id="bars"></i>
                     <i class="fas fa-times" id="times"></i>
                 </label>
             </div>
             <div class="menu">
                 <ul>
                     <li><a href="#episdios"> EPISODIOS</a></li>
-                    <li><a href="#">NOSOTROS</a> </li>
+                    <li><a href="#nosotros">NOSOTROS</a> </li>
                     <li><a href="#entrevistas"> ENTREVISTAS</a></li>
                     <li><a href="#topicos"> TÓPICOS</a></li>
                 </ul>
@@ -34,13 +32,13 @@
         </nav>
     </header>
     <main>
-        <div class="intro">
+        <section class="intro">
             <h1>Hello <span class="world">world </span><span class="pale">pale blue dot<span class="dot">.</span></span>
             </h1>
             <p>Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
-            <button class="btn-uno">CONOCÉ MÁS</button>
-        </div>
-        <div class="episodios" id="episodios">
+            <button class="btn-uno"><a href="#">CONOCÉ MÁS</a></button>
+        </section>
+        <section class="episodios" id="episodios">
             <div>
                 <h1>Episodios</h1>
                 <iframe src="https://open.spotify.com/embed-podcast/episode/5QxjHjjmdhegssDc8USgTc" width="100%"
@@ -49,11 +47,11 @@
                     height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 <iframe src="https://open.spotify.com/embed-podcast/episode/0qesfRllqjfyD7ly19qUwu" width="100%"
                     height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                <iframe src="https://open.spotify.com/embed-podcast/episode/0qesfRllqjfyD7ly19qUwu" width="100%"
+                <iframe src="https://open.spotify.com/embed-podcast/episode/6IwOe95up1vpmsAEUtfI1T" width="100%"
                     height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </div>
-        </div>
-        <div id="entrevistas" class="entrevistas">
+        </section>
+        <section id="nosotros" class="nosotros">
             <img src="images/phone.png" alt="">
             <h1>De dónde venimos</h1>
             <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the
@@ -62,7 +60,8 @@
             <p> Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
                 vastness, there is no hint that help will come from elsewhere to save us from ourselves.
             </p>
-
+        </section>
+        <section class="entrevistas" id="entrevistas">
             <h1>Invitadas/os estelares</h1>
             <img src="images/grace-hopper.png" alt="Grace Hopper">
             <img src="images/Katie-Bouman.png" alt="Katie Bouman">
@@ -71,9 +70,9 @@
             <img src="images/Eniac.png"
                 alt="Computer operators with an Eniac — the world first programmable general-purpose computer">
             <img src="images/susan-kare.png" alt="Susan Kare">
-        </div>
-        <div class="topicos" id="topicos">
-            <h1>algunos de nuestros temas</h1>
+        </section >
+        <section class="topicos" id="topicos">
+            <h1>Algunos de nuestros temas</h1>
             <img src="images/icon1.svg" alt="">
             <h3>Trabajo remoto</h3>
             <img src="images/icon2.svg" alt="">
@@ -82,22 +81,26 @@
             <h3>Bases del código</h3>
             <img src="images/icon4.svg" alt="">
             <h3>Seguridad informática</h3>
-        </div>
-        <div>
-            <h1>querés ver las últimas novedades?</h1>
-            <button class="btn-dos">ESCUCHÁ LOS EPISODIOS</button>
-        </div>
+        </section>
+
     </main>
     <footer>
-        <p> © 2019- Hello blue pale dot.</p>
-        <div>
-            <i class="fab fa-spotify"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-telegram"></i>
-
-        </div>
+        <section class="novedades">
+            <div>
+                <h1>¿Querés las últimas novedades?</h1>
+                <button class="btn-dos"><a href="#"> ESCUCHÁ LOS EPISODIOS</a></button>
+            </div>
+        </section>
+        <section class="social">
+            <p> © 2019- Hello blue pale dot.</p>
+            <div>
+                <a href="https://www.spotify.com/ar/"><i class="fab fa-spotify"></i></a>
+                <a href="https://www.instagram.com/"> <i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://web.telegram.org/"><i class="fab fa-telegram"></i></a>
+            </div>
+        </section>
     </footer>
 </body>
 

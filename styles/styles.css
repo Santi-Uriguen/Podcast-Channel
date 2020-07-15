@@ -38,7 +38,8 @@ footer {
   font-size: 14px;
   color: #060A24;
   letter-spacing: 0;
-  line-height: 22px; }
+  line-height: 22px;
+  text-decoration: none; }
 
 body {
   margin: 0; }
@@ -71,11 +72,14 @@ header {
         justify-content: space-between;
         height: 12px;
         margin-right: 19px; }
-        header nav .check label span {
-          width: 18px;
-          height: 2px;
-          background-color: #000000; }
-        header nav .check label i {
+        header nav .check label #bars {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 14px;
+          height: 14px;
+          font-size: 18px; }
+        header nav .check label #times {
           visibility: collapse;
           display: flex;
           justify-content: center;
@@ -104,9 +108,9 @@ header {
           font-size: 16px;
           letter-spacing: 0px;
           line-height: 28px; }
-  header #check:checked ~ .check span {
+  header #check:checked ~ .check #bars {
     visibility: collapse; }
-  header #check:checked ~ .check i {
+  header #check:checked ~ .check #times {
     visibility: visible; }
   header #check:checked ~ .menu {
     visibility: visible; }
@@ -137,6 +141,9 @@ main .intro {
     padding: 0;
     margin: 0;
     border: 0; }
+    main .intro .btn-uno a, main .intro .btn-dos a {
+      text-decoration: none;
+      color: #060a24; }
 main .episodios {
   background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
   padding: 55px 11px 120px 11px;
@@ -155,20 +162,89 @@ main .episodios {
       color: #ffffff; }
     main .episodios div iframe {
       margin: 5.5px 5px 5.5px 5px; }
-main .entrevistas {
+main .nosotros {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0px 16px 0px 16px; }
-  main .entrevistas img {
+  main .nosotros img {
     width: 360px;
     height: 519px;
     margin-top: -84px;
     z-index: 1; }
-  main .entrevistas h1 {
+  main .nosotros h1 {
     align-self: flex-start;
     margin: 27px 0px 8px 0px; }
-  main .entrevistas p {
+  main .nosotros p {
     margin: 0px 0px 12px 0px; }
+main .entrevistas {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  main .entrevistas h1 {
+    align-self: flex-start;
+    margin: 40px 0px 14px 16px; }
+  main .entrevistas img {
+    width: 100%;
+    height: auto;
+    margin: -1px; }
+main .topicos {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  main .topicos h1 {
+    align-self: flex-start;
+    margin: 48px 0px 37px 16px; }
+  main .topicos h3 {
+    margin: 13px 0px 49px 0px; }
+  main .topicos img {
+    width: 104px;
+    height: auto; }
+
+/*---------------------FOOTER------------------------------------------*/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  footer .novedades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: skewY(-6deg);
+    padding: 0px 16px 84px 16px;
+    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%); }
+    footer .novedades div {
+      transform: skewY(6deg); }
+      footer .novedades div h1 {
+        margin: 64px 0px 36px 0px;
+        color: #ffffff;
+        text-align: center; }
+      footer .novedades div .btn-dos {
+        background-color: #00f3bb;
+        width: 100%;
+        height: 48px;
+        padding: 0;
+        margin: 0;
+        border: 0; }
+        footer .novedades div .btn-dos a {
+          text-decoration: none;
+          color: #060a24; }
+  footer .social {
+    width: 100%;
+    height: 104px;
+    margin-top: -17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    z-index: 1; }
+    footer .social div {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly; }
+      footer .social div a {
+        color: #060a24;
+        text-decoration: none; }
 
 /*# sourceMappingURL=styles.css.map */
