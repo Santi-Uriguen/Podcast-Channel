@@ -1,0 +1,300 @@
+/*-----------------------------HEADER-----------------------------------------------------------*/
+
+
+body {
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    position: relative;
+    height: 44px;
+    nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        z-index: 1;
+        input {
+            opacity: 0;
+            display: none;
+        }
+        .check {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 44px;
+            align-items: center;
+            img {
+                justify-content: left;
+                height: 24px;
+                margin-left: 5%;
+            }
+            label {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 12px;
+                margin-right: 5.93%;
+
+                #bars {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 14px;
+                    height: 14px;
+                    font-size: 18px;
+                }
+                #times {
+                    visibility: collapse;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 14px;
+                    height: 14px;
+                    font-size: 18px;
+                }
+            }
+        }
+        .menu {
+            background-color: #0000ec;
+            visibility: collapse;
+            width: 100%;
+            height: 224px;
+            display: flex;
+            ul {
+                list-style: none;
+                font-family: "IBM Plex Mono";
+                padding-left: 0;
+                margin: 16px 0px 24px 16px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                li {
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        font-size: 16px;
+                        letter-spacing: 0px;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+    }
+    #check:checked ~ .check {
+        #bars {
+            visibility: collapse;
+        }
+        #times {
+            visibility: visible;
+        }
+    }
+    #check:checked ~ .menu {
+        visibility: visible;
+    }
+}
+
+/*-------------------------MAIN---------------------*/
+
+main {
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 5px 16px 40px 16px;
+        h1 {
+            text-align: left;
+            margin-bottom: 16px;
+            color: #060a24;
+            .world {
+                text-decoration: line-through;
+            }
+            .pale {
+                display: block;
+            }
+            .dot {
+                color: #0000ec;
+            }
+        }
+        p {
+            text-align: justify;
+            margin-bottom: 36px;
+        }
+        .p_mob {
+            display: flex;
+        }
+        .p_desk {
+            display: none;
+        }
+
+        .btn-uno {
+            background-color: #00f3bb;
+            width: 100%;
+            height: 48px;
+            padding: 0;
+            margin: 0;
+            border: 0;
+            &:hover {
+                color: #ffffff;
+                background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+            }
+        }
+    }
+    .episodios {
+        background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+        padding: 55px 11px 120px 11px;
+        transform: skewY(-6deg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2 {
+            align-self: flex-start;
+            transform: skewY(6deg);
+            margin: 0px 0px 16px 5px;
+            color: #ffffff;
+        }
+        div {
+            transform: skewY(6deg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            iframe {
+                width: 298px;
+                height: 225px;
+                border: none;
+                margin: 5.5px 5px 5.5px 5px;
+            }
+        }
+    }
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 16px 0px 16px;
+        div {z-index:1;
+            img {
+                width: 360px;
+                height: 519px;
+                margin-top: -84px;
+               
+            }
+        }
+        h2 {
+            align-self: flex-start;
+            margin: 27px 0px 8px 0px;
+        }
+        p {
+            margin: 0px 0px 12px 0px;
+        }
+    }
+    .entrevistas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            align-self: flex-start;
+            margin: 40px 0px 14px 16px;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                width: 100%;
+                height: auto;
+                margin: -1px;
+            }
+        }
+    }
+    .topicos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2 {
+            align-self: flex-start;
+            margin: 48px 0px 37px 16px;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            article {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items:center;
+                h3 {
+                    margin: 13px 0px 58px 0px;
+                }
+                img {
+                    width: 104px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+/*---------------------FOOTER------------------------------------------*/
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .novedades {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: skewY(-6deg);
+        padding: 0px 0px 84px 0px;
+        background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+        div {
+            transform: skewY(6deg);
+            h2 {
+                margin: 44px 0px 36px 0px;
+                color: #ffffff;
+                text-align: center;
+            }
+            .btn-dos {
+                background-color: #00f3bb;
+                width: 100%;
+                height: 48px;
+                padding: 0;
+                margin: 0;
+                border: 0;
+                &:hover {
+                    color: #ffffff;
+                    background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+                }
+            }
+        }
+    }
+    .social {
+        width: 100%;
+        height: 104px;
+        margin-top: -17px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #ffffff;
+        z-index: 1;
+        div {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            a {
+                color: #060a24;
+                text-decoration: none;
+            }
+        }
+    }
+}

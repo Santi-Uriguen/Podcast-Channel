@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap"),
     url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap");
 
-h1 {
+h1, h2 {
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 36px;
     letter-spacing: 0;
@@ -34,6 +34,7 @@ h3 {
     font-size: 24px;
     color: #060a24;
     letter-spacing: 0;
+    line-height: 32px;
     text-align: center;
     font-weight: 600;
 }
