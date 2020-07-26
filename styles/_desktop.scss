@@ -4,49 +4,15 @@
     /*------------------------------HEADER------------------------*/
 
     header {
-        display: flex;
-        height: 80px;
-        nav {
-            flex-direction: row;
-            justify-content: space-between;
+         nav {
             margin: 0 0 0 0;
-            .check {
-                height: 100%;
-                margin-left: 6.94%;
-                img {
-                    justify-content: left;
-                    height: 2.5vw;
-                }
-                label {
-                    display: none;
-                }
-            }
             .menu {
-                background-color: #ffffff;
-                visibility: visible;
                 width: 527px;
-                height: 100%;
-                align-items: center;
-                margin-right: 6.94%;
                 ul {
-                    width: 100%;
-                    margin: 0;
-                    flex-direction: row;
-
                     li {
                         a {
                             font-size: 100%;
                             color: #060a24;
-                            &:hover {
-                                color: #00f3bb;
-                                font-weight: 500;
-                                cursor: pointer;
-                                text-decoration: line-through;
-                            }
-                            &:active {
-                                color: rgba(6, 10, 36, 0.56);
-                                text-decoration: line-through;
-                            }
                         }
                     }
                 }
@@ -95,25 +61,26 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: space-between;
-                margin: 0 6.95% 16.15% 6.95%;
+                margin: 0 6.95% 10.9% 6.95%;
                 iframe {
                     width: 47.11%;
-                    height: 16.11vw;
-                    margin: 0 0 6.05% 0;
+                    height: 232px;
+                    margin: 0 0 72px 0;
                 }
             }
         }
         .nosotros {
+            justify-content:center;
             flex-wrap: wrap;
-            margin: 0 13.89vw 0 13.89vw;
-            height: 28.75vw;
-            width:100%;
+            margin: -11.74vw 13.89vw 0 13.89vw;
+            height: 660px;
+            width:72.2222%;
             .cell {
                 width: 43.95%;
                 img {
-                    width: 100%;
-                    height: 45.9vw;
-                    margin: -17.09vw 0 0 0;
+                    width: auto;
+                    height: 660px;
+                    margin: 0 0 0 0;
                 }
             }
             h2 {
@@ -146,7 +113,9 @@
                 font-size: 300%;
             }
             div {
+                flex-wrap:nowrap;
                 article {
+                    width:auto;
                     h3 {
                         margin: 2.02vw 0 0 0;
                     }

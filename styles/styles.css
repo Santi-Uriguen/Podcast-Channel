@@ -98,7 +98,7 @@ header {
       background-color: #0000ec;
       visibility: collapse;
       width: 100%;
-      height: 70vw;
+      height: 224px;
       display: flex;
       margin-top: -0.31%; }
       header nav .menu ul {
@@ -292,8 +292,7 @@ footer {
         height: 100%;
         margin-left: 6.94%; }
         header nav .check img {
-          justify-content: left;
-          height: 2.5vw;
+          height: 36px;
           margin: 0; }
         header nav .check label {
           display: none; }
@@ -423,43 +422,13 @@ footer {
 /*---------------------------Desktop-------------------*/
 @media (min-width: 950px) {
   /*------------------------------HEADER------------------------*/
-  header {
-    display: flex;
-    height: 80px; }
-    header nav {
-      flex-direction: row;
-      justify-content: space-between;
-      margin: 0 0 0 0; }
-      header nav .check {
-        height: 100%;
-        margin-left: 6.94%; }
-        header nav .check img {
-          justify-content: left;
-          height: 2.5vw; }
-        header nav .check label {
-          display: none; }
-      header nav .menu {
-        background-color: #ffffff;
-        visibility: visible;
-        width: 527px;
-        height: 100%;
-        align-items: center;
-        margin-right: 6.94%; }
-        header nav .menu ul {
-          width: 100%;
-          margin: 0;
-          flex-direction: row; }
-          header nav .menu ul li a {
-            font-size: 100%;
-            color: #060a24; }
-            header nav .menu ul li a:hover {
-              color: #00f3bb;
-              font-weight: 500;
-              cursor: pointer;
-              text-decoration: line-through; }
-            header nav .menu ul li a:active {
-              color: rgba(6, 10, 36, 0.56);
-              text-decoration: line-through; }
+  header nav {
+    margin: 0 0 0 0; }
+    header nav .menu {
+      width: 527px; }
+      header nav .menu ul li a {
+        font-size: 100%;
+        color: #060a24; }
 
   /*-----------------------------MAIN----------------------------------*/
   main {
@@ -493,22 +462,23 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: 0 6.95% 16.15% 6.95%; }
+        margin: 0 6.95% 10.9% 6.95%; }
         main .episodios div iframe {
           width: 47.11%;
-          height: 16.11vw;
-          margin: 0 0 6.05% 0; }
+          height: 232px;
+          margin: 0 0 72px 0; }
     main .nosotros {
+      justify-content: center;
       flex-wrap: wrap;
-      margin: 0 13.89vw 0 13.89vw;
-      height: 28.75vw;
-      width: 100%; }
+      margin: -11.74vw 13.89vw 0 13.89vw;
+      height: 660px;
+      width: 72.2222%; }
       main .nosotros .cell {
         width: 43.95%; }
         main .nosotros .cell img {
-          width: 100%;
-          height: 45.9vw;
-          margin: -17.09vw 0 0 0; }
+          width: auto;
+          height: 660px;
+          margin: 0 0 0 0; }
       main .nosotros h2 {
         margin: 2% 0 2.31% 2.9%;
         font-size: 300%;
@@ -529,8 +499,12 @@ footer {
     main .topicos h2 {
       margin: 4.45% 0 4.45% 13.89%;
       font-size: 300%; }
-    main .topicos div article h3 {
-      margin: 2.02vw 0 0 0; }
+    main .topicos div {
+      flex-wrap: nowrap; }
+      main .topicos div article {
+        width: auto; }
+        main .topicos div article h3 {
+          margin: 2.02vw 0 0 0; }
 
   /*-------------------FOOTER----------------------------------------*/
   footer .novedades {
