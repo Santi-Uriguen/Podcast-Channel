@@ -243,6 +243,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 100%);
     background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%); }
     footer .novedades div {
       display: flex;
